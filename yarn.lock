@@ -4007,7 +4007,7 @@ __metadata:
     "@storybook/addon-interactions": "npm:^7.6.17"
     "@storybook/addon-jest": "npm:^7.6.17"
     "@storybook/addon-knobs": "npm:^7.0.2"
-    "@storybook/addon-links": "npm:^7.6.17"
+    "@storybook/addon-links": "npm:^8.0.1"
     "@storybook/addon-mdx-gfm": "npm:^7.6.17"
     "@storybook/addon-storysource": "npm:^7.6.17"
     "@storybook/addon-viewport": "npm:^7.6.17"
@@ -5083,9 +5083,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^7.6.17":
-  version: 7.6.17
-  resolution: "@storybook/addon-links@npm:7.6.17"
+"@storybook/addon-links@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "@storybook/addon-links@npm:8.0.1"
   dependencies:
     "@storybook/csf": "npm:^0.1.2"
     "@storybook/global": "npm:^5.0.0"
@@ -5095,7 +5095,7 @@ __metadata:
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 10c0/c95aa5629a948f07a260430fecb8bed283a1bcfa97d8925b5edf3d4eab46155c85dec1814a00db4206a6de8323803b3d8bf74665c97caf34bb229a403f5b03d7
+  checksum: 10c0/94a6dab2f1cfb1f67023dd2973328a90f8021708f2f50d771962dff2718ebabd74760a54dbec1a7d878a4a76b697c9c53f871138e8a6387b3565c6b1897ebb7f
   languageName: node
   linkType: hard
 
