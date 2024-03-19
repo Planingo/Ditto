@@ -71,7 +71,7 @@
     "@storybook/core-events": "^7.6.17",
     "@storybook/manager-api": "^7.6.17",
     "@storybook/preview-api": "^7.6.17",
-    "@storybook/react": "^7.6.17",
+    "@storybook/react": "^8.0.2",
     "@storybook/react-webpack5": "^7.6.17",
     "@storybook/testing-library": "^0.2.2",
     "@storybook/theming": "^7.6.17",
