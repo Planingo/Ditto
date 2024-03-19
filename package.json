@@ -85,7 +85,7 @@
     "cypress": "^13.7.0",
     "eslint": "^8.20.0",
     "eslint-plugin-mdx": "^3.0.0",
-    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.1.0",
     "jest-image-snapshot": "^6.0.0",
     "mocha-junit-reporter": "^2.2.1",
