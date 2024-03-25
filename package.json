@@ -101,7 +101,7 @@
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "storybook": "^7.6.17",
-    "storybook-addon-pseudo-states": "^2.0.1",
+    "storybook-addon-pseudo-states": "^3.0.0",
     "typescript-proptypes-generator": "^0.0.6",
     "typescript-to-proptypes": "^2.2.1",
     "webpack": "5"
