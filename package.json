@@ -107,7 +107,7 @@
     "webpack": "5"
   },
   "dependencies": {
-    "antd": "^5.14.2",
+    "antd": "^5.15.4",
     "final-form": "^4.20.9",
     "react-final-form": "^6.5.9",
     "react-icons": "^5.0.1"
