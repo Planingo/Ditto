@@ -4014,7 +4014,7 @@ __metadata:
     "@storybook/addons": "npm:^7.6.17"
     "@storybook/api": "npm:^7.6.17"
     "@storybook/components": "npm:^7.6.17"
-    "@storybook/core-events": "npm:^7.6.17"
+    "@storybook/core-events": "npm:^8.0.4"
     "@storybook/manager-api": "npm:^7.6.17"
     "@storybook/preview-api": "npm:^7.6.17"
     "@storybook/react": "npm:^7.6.17"
@@ -5443,12 +5443,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:7.6.17, @storybook/core-events@npm:^7.6.17":
+"@storybook/core-events@npm:7.6.17":
   version: 7.6.17
   resolution: "@storybook/core-events@npm:7.6.17"
   dependencies:
     ts-dedent: "npm:^2.0.0"
   checksum: 10c0/ab6410da3a456a61138b4a760a28b74bb9dc6f4c81de0d5ff7760b1853c6a437f8a0d05301c291f45503575d60c3be4805db4178f649eccd32c5ffd98a790250
+  languageName: node
+  linkType: hard
+
+"@storybook/core-events@npm:^8.0.4":
+  version: 8.0.4
+  resolution: "@storybook/core-events@npm:8.0.4"
+  dependencies:
+    ts-dedent: "npm:^2.0.0"
+  checksum: 10c0/cf47bb9f4941f3c64549fef6edcdcda63a0d8105651d6a9f88847532ba2723fae09b69e0c9c1814385cd846638f9eaddc57793e11371e8ba080808dcbfaf8195
   languageName: node
   linkType: hard
 
