@@ -81,7 +81,7 @@
     "@testing-library/user-event": "^14.2.1",
     "autoprefixer": "^10.4.14",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "chromatic": "^11.0.0",
+    "chromatic": "^11.2.0",
     "cypress": "^13.7.0",
     "eslint": "^8.20.0",
     "eslint-plugin-mdx": "^3.0.0",
