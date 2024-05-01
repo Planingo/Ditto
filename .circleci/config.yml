@@ -2,6 +2,7 @@ version: 2.1
 orbs:
   discord: antonioned/discord@0.1.0
   node: circleci/node@5.0.2
+  cypress: cypress-io/cypress@3
 
 jobs:
   chromatic:
@@ -29,31 +30,6 @@ jobs:
             - ~/.config
             - ./node_modules
       - run: yarn test
-  e2e-test:
-    executor: node/default
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - dependencies-{{ checksum "yarn.lock" }}
-      - run: yarn
-      - save_cache:
-          key: dependencies-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache
-            - ~/.config
-            - ./node_modules
-      - run: sudo apt-get update && sudo apt-get install xvfb libnss3-dev libatk1.0-0 libatk-bridge2.0-0 libcups2 libgtk-3-0 libgbm1 libasound2
-      - run:
-          name: install chrome
-          command: |
-            sudo sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
-            wget -O- https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo tee /etc/apt/trusted.gpg.d/linux_signing_key.pub
-            sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 78BD65473CB3BD13
-            sudo apt-get update
-            sudo apt-key export D38B4796 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/chrome.gpg
-            sudo apt-get install google-chrome-stable
-      - run: yarn test:e2e
   publish:
     executor: node/default
     steps:
@@ -84,6 +60,21 @@ jobs:
           name: Deploy to Cloud Run
           command: |
             gcloud run deploy $REPO_NAME --image=$_AR_HOSTNAME/$GCLOUD_PROJECT_ID/$_SERVICE_NAME/$REPO_NAME:$CIRCLE_SHA1 --platform=$PLATFORM --region=$REGION --allow-$ALLOW
+  cypress/run:
+    executor: cypress/run
+    steps:
+      - checkout
+      - run: yarn set version latest
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - save_cache:
+          key: dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache
+            - ~/.config
+            - ./node_modules
 
 filters-tag: &filters-tag
   branches:
@@ -99,9 +90,13 @@ workflows:
   version: 2
   common:
     jobs:
-      - unit-test :
+      - cypress/run:
+          install-browsers: true
+          package-manager: yarn
+          start-command: 'yarn start'
+          cypress-command: 'yarn cypress run --browser chrome'
           filters: *filters-all
-      - e2e-test :
+      - unit-test :
           filters: *filters-all
       - chromatic :
           filters: *filters-all
@@ -112,5 +107,4 @@ workflows:
       - deploy:
           requires:
             - unit-test
-            - e2e-test
           filters: *filters-tag
