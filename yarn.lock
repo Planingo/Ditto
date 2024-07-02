@@ -6501,7 +6501,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:8.1.10, @storybook/core-events@npm:^8.0.9":
+"@storybook/core-events@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/core-events@npm:8.1.10"
   dependencies:
@@ -6511,7 +6511,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:8.1.11":
+"@storybook/core-events@npm:8.1.11, @storybook/core-events@npm:^8.0.9":
   version: 8.1.11
   resolution: "@storybook/core-events@npm:8.1.11"
   dependencies:
