@@ -5938,7 +5938,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:8.1.10, @storybook/addon-docs@npm:^8.0.9":
+"@storybook/addon-docs@npm:8.1.10":
   version: 8.1.10
   resolution: "@storybook/addon-docs@npm:8.1.10"
   dependencies:
@@ -5963,6 +5963,34 @@ __metadata:
     rehype-slug: "npm:^6.0.0"
     ts-dedent: "npm:^2.0.0"
   checksum: 10c0/b0b2405225957d833dbce711308757120318bd181e0122b8c810f46b1ce4a82acf377f68cd74f7e07e8e9afecf2c69e0e82733195dec64ef5343b5899507be45
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-docs@npm:^8.0.9":
+  version: 8.1.11
+  resolution: "@storybook/addon-docs@npm:8.1.11"
+  dependencies:
+    "@babel/core": "npm:^7.24.4"
+    "@mdx-js/react": "npm:^3.0.0"
+    "@storybook/blocks": "npm:8.1.11"
+    "@storybook/client-logger": "npm:8.1.11"
+    "@storybook/components": "npm:8.1.11"
+    "@storybook/csf-plugin": "npm:8.1.11"
+    "@storybook/csf-tools": "npm:8.1.11"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/node-logger": "npm:8.1.11"
+    "@storybook/preview-api": "npm:8.1.11"
+    "@storybook/react-dom-shim": "npm:8.1.11"
+    "@storybook/theming": "npm:8.1.11"
+    "@storybook/types": "npm:8.1.11"
+    "@types/react": "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
+    fs-extra: "npm:^11.1.0"
+    react: "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
+    react-dom: "npm:^16.8.0 || ^17.0.0 || ^18.0.0"
+    rehype-external-links: "npm:^3.0.0"
+    rehype-slug: "npm:^6.0.0"
+    ts-dedent: "npm:^2.0.0"
+  checksum: 10c0/c6a2b26d7cef1e36f324ab26b39cc109af8c9f09b51403ece25ab72ba493e9850003429633db46a2b4a8d0d0fd2fd17eb0f065ae2edf88114e10f55430530650
   languageName: node
   linkType: hard
 
@@ -6125,7 +6153,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:^8.0.9":
+"@storybook/blocks@npm:8.1.11, @storybook/blocks@npm:^8.0.9":
   version: 8.1.11
   resolution: "@storybook/blocks@npm:8.1.11"
   dependencies:
